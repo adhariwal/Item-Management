@@ -142,6 +142,7 @@
             $('#add').click(function(e) {
                 $("#error").html('');
                 var ItemName = $('#ItemName').val();
+				if(ItemName!=""){
                 $.ajax({
                     type: "POST",
                     url: host + '/add',
@@ -176,7 +177,11 @@
                         }
                     }
                 });
-
+				}else{
+					$("#error").html(
+                                '<div class="alert alert-danger"><strong>Error!</strong> Item name should not be blank !!</div>'
+                            );
+				}
             });
 
         });
