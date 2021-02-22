@@ -1,12 +1,11 @@
 # Item-Management
-
 1) git clone https://github.com/adhariwal/Item-Management.git
 
-2) run composer udpate 
+2) run composer update 
 
-3) Create .env file as per your DB details
+3) Create. env file as per your DB details
 
-4) php artisan migrate:status
+4) php artisan migrate: status
 
 5) php artisan migrate --force
 
